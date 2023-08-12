@@ -1,0 +1,7 @@
+Create a personal web page with at least three xhtml pages. The mainpage must contain your picture (recent photo) and your info. The other pages can be about anything you think it’s appropriate to include. All the pages must have a menu (static menu) that helps the user to navigate through your web page.  Create two version of the personal web page, each linked to a different external style sheet. The two pages must be identical, except for the style sheet they link to. 
+Style sheet Project Requirements 
+
+ You must modify at least eight standard HTML elements.  o e.g. BODY, P, H1 through H6, UL, A, BLOCKQUOTE, TABLE AND your style sheet must contain at least one custom class  o such as .important and .summary 
+Your web page URL, where the homework home page is posted,  must be submitted electronically throught the blackboard before the due date. For the class purposes the student can use a personal webhosting or can open a free webhosting account that are available on the internet. 
+Do not send the homework to my email.
+Felix Nevarez
