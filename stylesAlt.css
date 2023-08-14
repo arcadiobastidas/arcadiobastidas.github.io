@@ -1,18 +1,8 @@
 
-header {
-    background-color: whitesmoke;
-    margin-bottom: 20px;
-}
-
-
 body {
-    background-color: whitesmoke;
+    background-color: lightblue;
 }
 
-footer {
-    margin-top: 50%;
-    background-color: whitesmoke;
-}
 
 .personal-image {
     height: 400px;
