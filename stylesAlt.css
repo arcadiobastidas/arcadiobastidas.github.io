@@ -1,19 +1,53 @@
 
 body {
-    background-color: lightblue;
+    background-color: 	#e1f1fd;
 }
 
 
 .personal-image {
-    height: 400px;
-    width: 400px;
-    margin-left: 20px;
-}
+  object-fit: cover;
+  }
 
-.page-footer {
-    padding-top: 70px;
-}
+.page-footer{
+    display: inline-flex;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: 	#4663ac;
+    color: white;
+    text-align: center;
+    place-content: center;
+  }
 
+.page-footer > p {
+    display: block;
+    float: left;
+    padding: 14px 16px;
+    
+}
+.navbar-main {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:	#4663ac;
+  }
+  
+  .navbar-main > li {
+    float: left;
+  }
+  
 .menu-item {
-    padding-right: 10px;
-}
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+.menu-item:hover {
+    background-color: whitesmoke;
+    color: #000;
+  }
