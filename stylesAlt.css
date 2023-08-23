@@ -32,6 +32,7 @@ body {
     padding: 0;
     overflow: hidden;
     background-color:	#4663ac;
+    margin-bottom: 20px;
   }
   
   .navbar-main > li {
