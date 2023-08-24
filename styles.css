@@ -1,14 +1,10 @@
-
-header {
-    background-color: whitesmoke;
-    margin-bottom: 20px;
-}
-
-
+/* Overall body styles */
 body {
     background-color: whitesmoke;
 }
 
+
+/* Image Styles */
 .img-container {
   width: 400px;
   height: 600px;
@@ -19,12 +15,13 @@ body {
   width: 400px;
   height: inherit;
   margin-left: 40vw;
-  }
+}
 
 
 
-
+/* Page Footer styles */
 .page-footer{
+    margin-top: 10px;
     display: inline-flex;
     position: fixed;
     left: 0;
@@ -39,15 +36,18 @@ body {
 .page-footer > p {
     display: block;
     float: left;
-    padding: 14px 16px;
+   padding-right: 14px;
     
 }
+
+/* Navbar styles */
 .navbar-main {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #333;
+    margin-bottom: 20px;
   }
   
   .navbar-main > li {
@@ -65,4 +65,18 @@ body {
   /* Change the link color to #111 (black) on hover */
 .menu-item:hover {
     background-color: #111;
+  }
+
+  .navbar-main > .menu-list-last-element {
+    float: right !important;
+  }
+
+
+  /* table styles */
+  table, th, td {
+    border: 1px solid white;
+    border-collapse: collapse;
+  }
+  th, td {
+    background-color: lightgray;
   }

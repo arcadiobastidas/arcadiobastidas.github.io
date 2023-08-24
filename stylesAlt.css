@@ -1,12 +1,22 @@
-
+/* background color */
 body {
     background-color: 	#e1f1fd;
 }
 
+/* Image Styles */
+.img-container {
+  width: 400px;
+  height: 600px;
+}
 
 .personal-image {
   object-fit: cover;
+  width: 400px;
+  height: inherit;
+  margin-left: 40vw;
   }
+
+  /* Page Footer Styles */
 
 .page-footer{
     display: inline-flex;
@@ -23,9 +33,11 @@ body {
 .page-footer > p {
     display: block;
     float: left;
-    padding: 14px 16px;
+    padding-right: 14px;
     
 }
+
+/* Navbar styles */
 .navbar-main {
     list-style-type: none;
     margin: 0;
@@ -48,7 +60,21 @@ body {
   }
   
   /* Change the link color to #111 (black) on hover */
-.menu-item:hover {
+.menu-item:hover{
     background-color: whitesmoke;
     color: #000;
   }
+
+  .navbar-main > .menu-list-last-element {
+    float: right !important;
+  }
+
+
+    /* table styles */
+    table, th, td {
+      border: 1px solid white;
+      border-collapse: collapse;
+    }
+    th, td {
+      background-color: whitesmoke;
+    }
