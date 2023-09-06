@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice</title>
+    <style>
+        table {
+          font-family: arial, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+        }
+        
+        td, th {
+          border: 1px solid #dddddd;
+          text-align: left;
+          padding: 8px;
+        }
+        
+        tr:nth-child(even) {
+          background-color: #dddddd;
+        }
+        </style>
+</head>
+<body style="margin:10px;">
+  <h1 style="text-align: center;">INVOICE</h1>
+    <table id="itemsTable">
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Items will be inserted here -->
+        </tbody>
+    </table>
+    
+<div id="total-amounts-container" style="margin-left: 58%;" >
+    <p id="totalBeforeTaxes"></p>
+    <p id="taxes"></p>
+    <p id="totalAfterTaxes"></p>
+</div>
+
+
+  </table>
+</body>
+</html>
+

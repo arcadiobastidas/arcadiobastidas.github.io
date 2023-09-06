@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Computer Builder</title>
+</head>
+<body>
+    <ul class="navbar-main">
+      <li class="menu-list"><a class="menu-item" href="index.html"> Home</a></li>
+      <li class="menu-list"><a class="menu-item" href="about.html"> About</a></li>
+      <li class="menu-list"><a class="menu-item" href="contact.html">Contact</a></li>
+      <li class="menu-list"><a class="menu-item" href="instructions.html">Instructions</a></li>
+      <li class="menu-list"><a class="menu-item" href="computerBuilder.html">Build Your PC</a></li>
+      <li class="menu-list-last-element"><a class="menu-item" href="indexAlt.html">Alternate View (Style Sheet Change)</a></li>
+    </ul>
+
+<h2 class="computer-part-header">Choose Case</h2>
+<div class="computer-builder-container">
+  <div class="card">
+    <img src="images/pc-basic.jpg" style="width:100%">
+    <h1>Vader</h1>
+    <p id="vader-case-price">$339.99</p>
+    <p> All black case.</p>
+    <p><button onclick="TotalBuildPrice(document.getElementById('vader-case-price').innerText.toString().slice(1), 'Vader Case')">Add to Cart</button></p>
+  </div>
+  
+  <div class="card">
+    <img src="images/pc-pro.jpg" style="width:100%">
+    <h1>Snow Case</h1>
+    <p id="snow-case-price">$449.99</p>
+    <p>White, purple and black case.</p>
+    <p><button onclick="TotalBuildPrice(document.getElementById('snow-case-price').innerText.toString().slice(1), 'Snow Case')">Add to Cart</button></p>
+  </div>
+
+  <div class="purchase-total-container">
+    <h3 style="text-align: center;">Build Total</h1>
+      <ul id="checkout-items"></ul>
+      <div id="total"></div>
+      <p><button class="checkout-button" disabled onclick="createInvoiceWindow()">Proceed to Checkout</button></p>
+    </div>
+
+</div>
+
+<h2 class="computer-part-header">Choose CPU</h2>
+
+<div class="computer-builder-container">
+  <div class="card">
+    <img src="images/cpu-i9.png" style="width:100%">
+    <h1>Intel i9</h1>
+    <p id="intel-i9-price">$199.99</p>
+    <p>Intel i9 CPU processor</p>
+    <p><button onclick="TotalBuildPrice(document.getElementById('intel-i9-price').innerText.toString().slice(1), 'Intel i9 CPU')">Add to Cart</button></p>
+  </div>
+  
+  <div class="card">
+    <img src="images/cpu-i3.jpg" style="width:100%">
+    <h1>Intel i3</h1>
+    <p id="intel-i3-price">$299.99</p>
+    <p>Intel i9 CPU processor</p>
+    <p><button onclick="TotalBuildPrice(document.getElementById('intel-i3-price').innerText.toString().slice(1), 'Intel i3 CPU')">Add to Cart</button></p>
+  </div>
+
+
+</div>
+
+<h2 class="computer-part-header">Choose Power Supply</h2>
+
+<div class="computer-builder-container">
+  <div class="card">
+    <img src="images/asus-tuf.png" style="width:100%">
+    <h1>ASUS TUF</h1>
+    <p id="asus-tuf-price">$219.99</p>
+    <p>ASUS TUF Gaming 1000W</p>
+    <p><button onclick="TotalBuildPrice(document.getElementById('asus-tuf-price').innerText.toString().slice(1), 'ASUS TUF')">Add to Cart</button></p>
+  </div>
+  
+  <div class="card">
+    <img src="images/corsair-750.jpg" style="width:100%">
+    <h1>CORSAIR RMx</h1>
+    <p id="corsair-750-price">$319.99</p>
+    <p>CORSAIR RMx Series</p>
+    <p><button onclick="TotalBuildPrice(document.getElementById('corsair-750-price').innerText.toString().slice(1), 'CORSAIR RMx')">Add to Cart</button></p>
+  </div>
+
+
+</div>
+
+<h2 class="computer-part-header">Choose Motherboard</h2>
+
+<div class="computer-builder-container">
+  <div class="card">
+    <img src="images/asus-rog.png" style="width:100%">
+    <h1>ASUS ROG STRIX</h1>
+    <p id="asus-rog-price">$399.99</p>
+    <p>ASUS ROG STRIX Z790-H Gaming (WiFi 6E)</p>
+    <p><button onclick="TotalBuildPrice(document.getElementById('asus-rog-price').innerText.toString().slice(1), 'ASUS ROG STRIX')">Add to Cart</button></p>
+  </div>
+  
+  <div class="card">
+    <img src="images/gigabyte.jpg" style="width:100%">
+    <h1>GIGABYTE B760M</h1>
+    <p id="gigabyte-760-price">$299.99</p>
+    <p>GIGABYTE B760M AORUS ELITE AX LGA</p>
+    <p><button onclick="TotalBuildPrice(document.getElementById('gigabyte-760-price').innerText.toString().slice(1), 'GIGABYTE B760M')">Add to Cart</button></p>
+  </div>
+
+
+</div>
+
+<h2 class="computer-part-header">Choose Memory</h2>
+
+<div class="computer-builder-container">
+  <div class="card">
+    <img src="images/corsair-vengance.jpg" style="width:100%">
+    <h1>CORSAIR Vengeance </h1>
+    <p id="corsair-vengeance-price">$99.99</p>
+    <p>CORSAIR Vengeance RGB Pro 32GB (2 x 16GB) </p>
+    <p><button onclick="TotalBuildPrice(document.getElementById('corsair-vengeance-price').innerText.toString().slice(1),'CORSAIR Vengeance')">Add to Cart</button></p>
+  </div>
+  
+  <div class="card">
+    <img src="images/g-skill-memory.png" style="width:100%">
+    <h1>G.SKILL Trident Z5 RGB Series </h1>
+    <p id="g-skill-price">$119.99</p>
+    <p>G.SKILL Trident RGB Series 32GB (2 x 16GB)</p>
+    <p><button onclick="TotalBuildPrice(document.getElementById('g-skill-price').innerText.toString().slice(1),'G.SKILL Trident')">Add to Cart</button></p>
+  </div>
+
+
+</div>
+
+<h2 class="computer-part-header">Choose Storage</h2>
+
+<div class="computer-builder-container">
+  <div class="card">
+    <img src="images/wd-storage.jpg" style="width:100%">
+    <h1>WD_BLACK SN850X</h1>
+    <p id="wd-storage-price">$100.99</p>
+    <p>WD_BLACK SN850X NVMe M.2 2280</p>
+    <p><button onclick="TotalBuildPrice(document.getElementById('wd-storage-price').innerText.toString().slice(1), 'WD_BLACK SN850X')">Add to Cart</button></p>
+  </div>
+  
+  <div class="card">
+    <img src="images/adata.jpg" style="width:100%">
+    <h1>ADATA APSFG-2T-CSUS</h1>
+    <p id="adata-storage-price">$200.99</p>
+    <p>ADATA PREMIUM SSD FOR PS5 M.2 </p>
+    <p><button onclick="TotalBuildPrice(document.getElementById('adata-storage-price').innerText.toString().slice(1), 'ADATA APSFG-2T-CSUS')">Add to Cart</button></p>
+  </div>
+
+
+</div>
+
+<script>
+
+  //invoice window
+  var invoiceWindow;
+
+  //var to store checkout button since it will be disabled by default
+  var checkoutButton = document.querySelector(".checkout-button");
+
+  // initialize cart total to 0
+  var totalBeforeTaxes = parseFloat(0);
+  var totalAfterTaxes;
+
+  // var to store taxes
+  const taxPercent = parseFloat(11.5);
+  var taxAmount;
+
+  // initialize arrays
+  var itemCount = 0;
+  let partNameArray = [];
+  let partPriceArray= [];
+
+  // create an element to show current total before taxes.
+  var calculatedTotal = document.createElement('p')
+  document.querySelector('#total').appendChild(calculatedTotal);
+  
+
+  // inserting values into array when the user selects a computer part. 
+  function TotalBuildPrice(partPrice, partName){
+    
+    // converting part price to float
+    var parsedValue = parseFloat(partPrice);
+    
+    //only if item is not in the cart, add them and update the price.
+      if(partNameArray.indexOf(partName)<0){
+      
+          // pushing partname and partPrice into their respective arrays
+           partNameArray.push(partName);     
+           partPriceArray.push(parsedValue)  ;
+           partPriceArray.forEach(element => {
+            totalBeforeTaxes+= element;
+          });
+      alert(partName + ' added to Cart');
+      updateCart(itemCount);
+      calculatedTotal.innerText = 'Items in Cart: '+ partNameArray.length + '\nTotal before taxes: $'+ parseFloat(totalBeforeTaxes).toFixed(2)
+      checkoutButton.disabled = false; // enabling checkout button
+      } 
+      else
+      {
+
+          alert(partName +" is already in cart!");  
+      }
+
+
+  }
+
+  // dynamically add elements to cart upon succesful creation
+  function updateCart(index){
+
+      let list = document.createElement('li');
+      list.innerText = partNameArray[index] + ' -  $' + partPriceArray[index];
+
+      document.querySelector('#checkout-items').appendChild(list);
+      itemCount++;
+
+  }
+  function createInvoiceWindow() {
+    invoiceWindow = window.open('computerInvoice.html');
+
+    invoiceWindow.onload = function() {
+        let amountBeforeTaxes = invoiceWindow.document.getElementById("totalBeforeTaxes");
+        let amountAfterTaxes = invoiceWindow.document.getElementById("totalAfterTaxes");
+        let taxesAmount = invoiceWindow.document.getElementById("taxes");
+        
+        if (amountBeforeTaxes) {
+          amountBeforeTaxes.textContent = "Total Before Taxes: $" + parseFloat(totalBeforeTaxes).toFixed(2);
+        }
+
+        if (taxesAmount) {
+          taxesAmount.textContent = "Tax Total: $" + parseFloat(totalBeforeTaxes * (taxPercent/100)).toFixed(2) + ' (Based on ' + taxPercent + ' IVU)';
+        }
+
+        if (amountAfterTaxes) {
+          amountAfterTaxes.textContent = "Grand Total: $" + parseFloat((totalBeforeTaxes * (taxPercent/100)) + totalBeforeTaxes).toFixed(2);
+        }
+
+        let tableBody = invoiceWindow.document.querySelector("#itemsTable tbody");
+        if (tableBody) {
+            for (let i = 0; i < partNameArray.length; i++) {
+                let row = document.createElement('tr');
+
+                let nameCell = document.createElement('td');
+                nameCell.textContent = partNameArray[i];
+                row.appendChild(nameCell);
+
+                let priceCell = document.createElement('td');
+                priceCell.textContent = '$' + partPriceArray[i].toFixed(2);
+                row.appendChild(priceCell);
+
+                tableBody.appendChild(row);
+            }
+        }
+
+
+    };
+}
+</script>
+
+</body>
+</html>

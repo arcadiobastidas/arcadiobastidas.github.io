@@ -80,3 +80,105 @@ body {
   th, td {
     background-color: lightgray;
   }
+
+
+  /* Computer Builder Card */
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: 20px;
+    text-align: center;
+    font-family: arial;
+    background-color: white;
+  }
+  
+  .price {
+    color: grey;
+    font-size: 22px;
+  }
+  
+  .card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  .card button:hover {
+    opacity: 0.7;
+  }
+
+  .computer-builder-container {
+    display: inline-flex;
+    flex-wrap: wrap;
+  }
+
+
+.computer-part-header {
+  width: 55%;
+  white-space: nowrap;
+  text-align: center;
+  background: white;
+  margin: 20px;
+  padding: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.purchase-total-container {
+  position: fixed;
+  width: 400px;
+  height: 400px;
+  margin-left: 70vw;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background: white;
+}
+
+.checkout-button {
+  border-radius: 5px;
+  padding: 10px;
+  display: inline-grid;
+  border-color: white;
+  background: forestgreen;
+  border: 1px;
+  margin-top: 5%;
+  margin-left: 32%;
+  color: white;
+  cursor: pointer;
+}
+
+.checkout-button:hover {
+  opacity: 0.7;
+}
+
+.checkout-button:disabled,
+.checkout-button[disabled]{
+  border: 1px solid whitesmoke;
+  background-color: whitesmoke;
+  color: #666666;
+}
+
+
+
+/* invoice page */
+
+
+.totals {
+  border-style: ridge !important;
+  padding: 10px;
+  background: whitesmoke;
+}
+
+.total-amounts-container {
+    display: inline-block;
+    width: 50%;
+}
+
+#total {
+  padding-left: 10px;
+}
