@@ -4,7 +4,7 @@
     <xsl:template match="/">
         <html>
             <head>
-            <link rel="stylesheet" href="xmlStyleSAlt.css"/>
+            <link rel="stylesheet" href="xmlStylesAlt.css"/>
                 <style>
                     table {
                         width: 100%;
