@@ -4,6 +4,9 @@
     <xsl:template match="/">
         <html>
             <head>
+                <!-- Reference to the styles.css -->
+                <link rel="stylesheet" href="styles.css">
+
                 <style>
                     table {
                         width: 100%;
@@ -19,6 +22,20 @@
                 </style>
             </head>
             <body>
+                <!-- Header/Menu -->
+                <ul class="navbar-main">
+                    <li class="menu-list"><a class="menu-item" href="index.html"> Home</a></li>
+                    <li class="menu-list"><a class="menu-item" href="about.html"> About</a></li>
+                    <li class="menu-list"><a class="menu-item" href="contact.html">Contact</a></li>
+                    <li class="menu-list"><a class="menu-item" href="instructions.html">Instructions</a></li>
+                    <li class="menu-list"><a class="menu-item" href="computerBuilder.html">Build Your PC</a></li>
+                    <li class="menu-list"><a class="menu-item" href="Animate.html">Adobe Animate</a></li>
+                    <li class="menu-list"><a class="menu-item" href="textbooks.xml">TextBooks</a></li>
+                    <li class="menu-list-last-element"><a class="menu-item" href="indexAlt.html">Alternate View (Style Sheet Change)</a></li>
+                </ul>
+                <!-- End of Header/Menu -->
+
+                <!-- Table to display textbooks -->
                 <table>
                     <thead>
                         <tr>
