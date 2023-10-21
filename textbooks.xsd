@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="textbooks" type="xs:textbooksType"/>
+
+    <xs:complexType name="textbooksType">
+        <xs:sequence>
+            <xs:element name="textbook" type="xs:textbookType" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="textbookType">
+        <xs:sequence>
+            <xs:element name="title" type="xs:string"/>
+            <xs:element name="author" type="xs:authorType"/>
+            <xs:element name="publisher" type="xs:publisherType"/>
+            <xs:element name="publicationYear" type="xs:positiveInteger"/>
+            <xs:element name="ISBN" type="xs:string"/>
+            <xs:element name="bookWebsite" type="xs:anyURI" minOccurs="0"/>
+            <xs:element name="edition" type="xs:string"/>
+            <xs:element name="coverType" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="authorType">
+        <xs:sequence>
+            <xs:element name="firstName" type="xs:string"/>
+            <xs:element name="lastName" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="publisherType">
+        <xs:sequence>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="website" type="xs:anyURI"/>
+        </xs:sequence>
+    </xs:complexType>
+
+</xs:schema>

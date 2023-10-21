@@ -4,7 +4,7 @@
     <xsl:template match="/">
         <html>
             <head>
-            <link rel="stylesheet" href="xmlStyles.css"/>
+            <link rel="stylesheet" href="xmlStyleSAlt.css"/>
                 <style>
                     table {
                         width: 100%;
@@ -51,9 +51,9 @@
                         <xsl:for-each select="textbooks/textbook">
                             <tr>
                                 <td><xsl:value-of select="title"/></td>
-                                <td><xsl:value-of select="author/firstName"/>
-                                  <xsl:text> </xsl:text>
-                                 <xsl:value-of select="author/lastName"/></td>
+                                <td><xsl:value-of select="author/firstName"/> 
+                                 <xsl:text> </xsl:text>
+                                <xsl:value-of select="author/lastName"/></td>
                                 <td><xsl:value-of select="publisher/name"/></td>
                                 <td><xsl:value-of select="publicationYear"/></td>
                                 <td><xsl:value-of select="ISBN"/></td>
