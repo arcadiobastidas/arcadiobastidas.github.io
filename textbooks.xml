@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="textbooks.xsl"?>
+<textbooks xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:noNamespaceSchemaLocation="textbook.xsd">
+    <textbook>
+        <title>Advanced Machine Learning</title>
+        <author>
+            <firstName>John</firstName>
+            <lastName>Doe</lastName>
+        </author>
+        <publisher>
+            <name>Oxford University Press</name>
+            <website>https://www.oup.com</website>
+        </publisher>
+        <publicationYear>2022</publicationYear>
+        <ISBN>123-4567890123</ISBN>
+        <bookWebsite>https://aml.oup.com</bookWebsite>
+        <edition>3rd</edition>
+        <coverType>hardcover</coverType>
+    </textbook>
+    <textbook>
+        <title>Data Science for Dummies</title>
+        <author>
+            <firstName>Jane</firstName>
+            <lastName>Smith</lastName>
+        </author>
+        <publisher>
+            <name>Wiley</name>
+            <website>https://www.wiley.com</website>
+        </publisher>
+        <publicationYear>2021</publicationYear>
+        <ISBN>987-6543210987</ISBN>
+        <bookWebsite>https://dsfd.wiley.com</bookWebsite>
+        <edition>2nd</edition>
+        <coverType>paperback</coverType>
+    </textbook>
+</textbooks>
